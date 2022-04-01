@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script>
+        
+        let values = [true, 5, false, "hola", "adios", 2];
+
+        // Arrays vacios para después introducir datos según el tipo
+        let valuesBoolean = [];
+        let valuesNumber = [];
+        let valuesString = [];
+
+        // Bucle para recorrer el array values e ir introduciendo los datos según su tipo
+        for (let i = 0; i<values.length; i++){
+            if ( typeof values[i] == 'boolean'){
+                valuesBoolean.push(values[i])
+            } else if (typeof values[i] == 'number'){
+                valuesNumber.push(values[i]);
+            } else if (typeof values[i == 'string']){
+                valuesString.push(values[i]);
+            }
+        }
+
+        // Comparamos los 2 elementos del array valuesString 
+        if (valuesString[0] > valuesString[1]){
+            document.write(valuesString[0] + " es mayor que " + valuesString[1] + "<br>");
+        } else {
+            document.write(valuesString[1] + "es mayor que " + valuesString[0] + "<br>");
+        }
+
+        document.write(valuesBoolean[0] + valuesBoolean[1] + "<br>");
+        document.write(valuesBoolean[0] * valuesBoolean[1] + "<br>");
+
+        document.write("La suma de " + valuesNumber[0] + " y " + valuesNumber[1] + " es = " + (valuesNumber[0]+valuesNumber[1]) + "<br>");
+        document.write("La resta de " + valuesNumber[0] + " y " + valuesNumber[1] + " es = " + (valuesNumber[0]-valuesNumber[1]) + "<br>");
+        document.write("La multiplicación de " + valuesNumber[0] + " y " + valuesNumber[1] + " es = " + (valuesNumber[0]*valuesNumber[1]) + "<br>");
+        document.write("La división de " + valuesNumber[0] + " y " + valuesNumber[1] + " es = " + (valuesNumber[0]/valuesNumber[1]) + "<br>");
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

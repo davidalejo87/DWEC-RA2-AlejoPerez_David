@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+        // Pedimos mediante prompt el nombre
+        let name = prompt("¿Como te llamas?");
+
+        // Variable day para sacar el dia y la hora, y con la variable hour sacamos la hora
+        let day = new Date();
+        let hour = day.getHours();
+
+        // Condicional para distinguir entre mañana, tarde o noche
+        if (hour >= 5 & hour < 12){
+            document.write("Buenos días " + name);
+        } else if (hour >= 12 & hour <= 20){
+            document.write("Buenas tardes " + name);
+        } else {
+            document.write("Buenas noches " + name);
+        }
+    </script>
+</head>
+<body>   
+     
+</body>
+</html>

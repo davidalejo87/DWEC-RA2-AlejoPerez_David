@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script>
+
+        // Variable con las letras del abecedario
+        let letters = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+        
+        // Variable que pide por pantalla el número de DNI
+        let number = prompt("Introduce el número de tu DNI (sin letra) ");
+
+        // Variable para calcular la letra que le tocaría al número que hemos introducido
+        let letterDni = letters[number % 23];
+
+        // Estructura de control para saber que ingresan un numero correcto
+        if (number >= 0 && number < 99999999){
+            alert("Tu DNI completo es " + number + letterDni);
+        } else {
+            alert("El número que has introducido no es correcto.");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

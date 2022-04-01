@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+
+        // Variable que pide por pantalla un número
+        let number = prompt("Escribe un número: ");
+
+        // Variable que utilizamos en el bucle for para obtener el resultado final
+        let total = 1;
+
+        // Estructura de control para saber si ha introducido un número
+        if (isNaN(number) == false){
+            // Bucle donde iteramos el número de veces que hayan introducido 
+            for (let i=1; i<= number; i++){
+                total = total * i;                  
+            }
+            // Escribimos por pantalla el resultado
+            document.write("El factorial de " + number + " es " + total);
+
+        } else {
+            
+            alert("No has escrito un número.");
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
